@@ -1,0 +1,22 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>home</ion-title>
+  </ion-navbar>
+  
+</ion-header>
+
+
+<ion-content padding>
+  
+    <ion-card *ngFor="let image of image_List" [style.backgroundImage]="'url(' + image.avator_url +' )'"
+    style="background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;" >
+
+      {{image.name}}
+      
+      <div class="shade"></div>
+    </ion-card>
+    
+</ion-content>
